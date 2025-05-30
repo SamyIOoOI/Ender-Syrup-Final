@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "endersyrup:ender_ash"
+  },
+  "result": {
+    "id": "endersyrup:ender_syrup"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "endersyrup",
+  "version": "${version}",
+  "name": "EnderSyrup",
+  "description": "A mod that adds a couple of nice ender related things!",
+  "authors": [
+    "Samy Mohamed"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.cyao.endersyrup.client.EndersyrupClient"
+    ],
+    "main": [
+      "com.cyao.endersyrup.EnderSyrupMod"
+    ],
+    "fabric-datagen": [
+      "com.cyao.endersyrup.EndersyrupDataGenerator"
+    ]
+  },
+  "mixins": [
+    "endersyrup.mixins.json",
+    {
+      "config": "endersyrup.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+
+}
